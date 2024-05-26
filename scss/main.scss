@@ -1,0 +1,41 @@
+@import "./fonts";
+@import "reset";
+@import "mixin";
+@import "variable";
+@import "block/navbar";
+@import "block/footer";
+@import "block/futures";
+@import "block/locatin";
+@import "block/section";
+@import "block/plan";
+@import "block/hero";
+@import "block/karusel";
+
+body{
+    min-height: 500vh;
+}
+
+
+
+
+
+
+@media (min-width: 1200px) {
+    ::-webkit-scrollbar{
+        width: 8px;
+    }
+    ::-webkit-scrollbar-thumb{
+        background: red;
+        border-radius: 50px;
+    }
+    .feedback{
+        &__box{
+            &::-webkit-scrollbar{
+                height: 8px;
+            }
+            &::-webkit-scrollbar-thumb{
+                background: red;
+            }
+        }
+    }
+}

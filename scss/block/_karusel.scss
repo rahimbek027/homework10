@@ -1,0 +1,49 @@
+.karusel__box {
+  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-direction: column;
+  b {
+    font-size: 35px;
+  }
+  .karusel__cards {
+    width: 100%;
+    display: grid;
+    gap: 15px;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
+    // border: 1px solid red;
+    overflow: auto;
+    
+    padding: 10px 0;
+
+    //   white-space: nowrap;
+
+    .karusel__card {
+      width: 400px;
+      border: 1px solid gray;
+      border-radius: 25px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+    .karusel__logo {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 15px;
+      .karusel__text {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+      }
+      .star {
+        display: flex;
+        flex-direction: row;
+      }
+    }
+  }
+}
